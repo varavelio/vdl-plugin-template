@@ -1,5 +1,5 @@
 {
-  "name": "@varavel/vdl-plugin-go",
+  "name": "vdl-plugin-template",
   "private": true,
   "version": "0.0.0",
   "type": "module",

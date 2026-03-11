@@ -1,0 +1,4 @@
+{
+  "extends": "@varavel/vdl-plugin-sdk/tsconfig.base.json",
+  "include": ["src/**/*"]
+}

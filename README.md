@@ -111,7 +111,7 @@ Release flow:
 
 This template intentionally keeps `dist/` out of `.gitignore` because `dist/index.js` is part of the distributable plugin.
 
-Example plugin reference in VDL config:
+Example plugin reference in VDL config (`vdl.config.vdl`):
 
 ```vdl
 const config = {

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+jspm_packages/
+.npm
+.yarn/cache
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Coverage
+coverage
+
+# Environment and Secrets
+.env
+.env.*
+!.env.example
+
+# IDE/Tools
+.vscode-test
+.eslintcache

@@ -94,7 +94,9 @@ If you want real plugin examples, see the official repositories:
 
 The included devcontainer installs dependencies on creation and gives you a consistent environment with the expected tooling already configured.
 
-The GitHub workflow uses the devcontainer in CI as well, so local development and CI stay aligned.
+If you want to use it, check the [Dev Containers documentation](https://code.visualstudio.com/docs/devcontainers/containers). You need Docker and VS Code (or fork like cursor, antigravity, etc), and using them is strongly recommended because they remove most local setup friction and make the development workflow much easier.
+
+The GitHub workflow uses the devcontainer in CI as well (without you having to do anything extra), so local development and CI stay aligned.
 
 ## Releasing and deployment
 

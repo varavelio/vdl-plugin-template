@@ -12,7 +12,9 @@
     "lint": "npm run lint:dprint && npm run lint:biome",
     "lint:dprint": "dprint check --config ./dprint.json --log-level warn",
     "lint:biome": "biome check --config-path ./biome.json --log-level warn --no-errors-on-unmatched .",
-    "test": "vitest run --passWithNoTests",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:unit": "vitest run --passWithNoTests --config ./vitest.config.ts ./src",
+    "test:e2e": "vitest run --passWithNoTests --config ./vitest.config.ts ./e2e",
     "ci": "npm run lint && npm run check && npm run test && npm run build"
   },
   "devDependencies": {

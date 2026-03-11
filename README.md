@@ -113,7 +113,7 @@ This template intentionally keeps `dist/` out of `.gitignore` because `dist/inde
 
 Example plugin reference in VDL config:
 
-```txt
+```vdl
 const config = {
   version 1
   plugins [

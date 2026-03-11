@@ -1,0 +1,26 @@
+{
+  "name": "@varavel/vdl-plugin-go",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vdl-plugin build",
+    "check": "vdl-plugin check",
+    "format": "npm run format:dprint && npm run format:biome",
+    "format:dprint": "dprint fmt --config ./dprint.json --log-level warn",
+    "format:biome": "biome format --write --config-path ./biome.json --log-level warn --no-errors-on-unmatched .",
+    "lint": "npm run lint:dprint && npm run lint:biome",
+    "lint:dprint": "dprint check --config ./dprint.json --log-level warn",
+    "lint:biome": "biome check --config-path ./biome.json --log-level warn --no-errors-on-unmatched .",
+    "test": "vitest run --passWithNoTests",
+    "ci": "npm run lint && npm run check && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.6",
+    "@varavel/vdl": "0.5.0-alpha.3",
+    "@varavel/vdl-plugin-sdk": "0.1.1",
+    "dprint": "0.52.0",
+    "typescript": "5.9.3",
+    "vitest": "4.0.18"
+  }
+}

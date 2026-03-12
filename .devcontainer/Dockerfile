@@ -15,7 +15,6 @@ RUN set -e && \
 WORKDIR /app
 
 # Add the startup script on every bash session
-RUN rm -f /root/.bashrc
 COPY .devcontainer/.bashrc /root/.bashrc
 
 # Command just to keep the container running

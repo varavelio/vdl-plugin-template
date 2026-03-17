@@ -1,0 +1,341 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`VDL Plugin: end-to-end tests > compiles fixture: simpletest > hello.txt 1`] = `"Hello from VDL Plugin"`;
+
+exports[`VDL Plugin: end-to-end tests > compiles fixture: simpletest > input.json 1`] = `
+"{
+  "version": "0.5.0-alpha.3",
+  "ir": {
+    "entryPoint": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+    "constants": [],
+    "enums": [],
+    "types": [
+          {
+            "position": {
+              "file": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+              "line": 4,
+              "column": 1
+            },
+            "name": "FooType",
+            "annotations": [],
+            "typeRef": {
+                "kind": "object",
+                "objectFields": [
+                  {
+                    "position": {
+                      "file": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+                      "line": 5,
+                      "column": 3
+                    },
+                    "name": "firstField",
+                    "optional": false,
+                    "annotations": [],
+                    "typeRef": {
+                        "kind": "primitive",
+                        "primitiveName": "string"
+                      }
+                  },
+                  {
+                    "position": {
+                      "file": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+                      "line": 6,
+                      "column": 3
+                    },
+                    "name": "secondField",
+                    "optional": false,
+                    "annotations": [],
+                    "typeRef": {
+                        "kind": "array",
+                        "arrayType": {
+                          "kind": "primitive",
+                          "primitiveName": "int"
+                        },
+                        "arrayDims": 1
+                      }
+                  }
+                ]
+              }
+          },
+          {
+            "position": {
+              "file": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+              "line": 9,
+              "column": 1
+            },
+            "name": "MyRpc",
+            "annotations": [
+              {
+                "position": {
+                  "file": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+                  "line": 9,
+                  "column": 1
+                },
+                "name": "rpc"
+              }
+            ],
+            "typeRef": {
+              "kind": "object",
+              "objectFields": [
+                {
+                  "position": {
+                    "file": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+                    "line": 11,
+                    "column": 3
+                  },
+                  "name": "barProc",
+                  "optional": false,
+                  "annotations": [
+                    {
+                      "position": {
+                        "file": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+                        "line": 11,
+                        "column": 3
+                      },
+                      "name": "proc"
+                    }
+                  ],
+                  "typeRef": {
+                    "kind": "object",
+                    "objectFields": [
+                      {
+                        "position": {
+                          "file": "",
+                          "line": 13,
+                          "column": 5
+                        },
+                        "name": "input",
+                        "optional": false,
+                        "annotations": [],
+                        "typeRef": {
+                            "kind": "object",
+                            "objectFields": [
+                              {
+                                "position": {
+                                  "file": "",
+                                  "line": 14,
+                                  "column": 7
+                                },
+                                "name": "foo",
+                                "optional": false,
+                                "annotations": [],
+                                "typeRef": {
+                                    "kind": "type",
+                                    "typeName": "FooType"
+                                  }
+                              }
+                            ]
+                          }
+                      },
+                      {
+                        "position": {
+                          "file": "",
+                          "line": 17,
+                          "column": 5
+                        },
+                        "name": "output",
+                        "optional": false,
+                        "annotations": [],
+                        "typeRef": {
+                            "kind": "object",
+                            "objectFields": [
+                              {
+                                "position": {
+                                  "file": "",
+                                  "line": 18,
+                                  "column": 7
+                                },
+                                "name": "baz",
+                                "optional": false,
+                                "annotations": [],
+                                "typeRef": {
+                                    "kind": "primitive",
+                                    "primitiveName": "bool"
+                                  }
+                              }
+                            ]
+                          }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+    "docs": []
+  },
+  "options": {
+    "package": "gen"
+  }
+}"
+`;
+
+exports[`VDL Plugin: example end-to-end tests > compiles fixture: simpletest > hello.txt 1`] = `"Hello from VDL Plugin"`;
+
+exports[`VDL Plugin: example end-to-end tests > compiles fixture: simpletest > input.json 1`] = `
+"{
+  "version": "0.5.0-alpha.3",
+  "ir": {
+    "entryPoint": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+    "constants": [],
+    "enums": [],
+    "types": [
+          {
+            "position": {
+              "file": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+              "line": 4,
+              "column": 1
+            },
+            "name": "FooType",
+            "annotations": [],
+            "typeRef": {
+                "kind": "object",
+                "objectFields": [
+                  {
+                    "position": {
+                      "file": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+                      "line": 5,
+                      "column": 3
+                    },
+                    "name": "firstField",
+                    "optional": false,
+                    "annotations": [],
+                    "typeRef": {
+                        "kind": "primitive",
+                        "primitiveName": "string"
+                      }
+                  },
+                  {
+                    "position": {
+                      "file": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+                      "line": 6,
+                      "column": 3
+                    },
+                    "name": "secondField",
+                    "optional": false,
+                    "annotations": [],
+                    "typeRef": {
+                        "kind": "array",
+                        "arrayType": {
+                          "kind": "primitive",
+                          "primitiveName": "int"
+                        },
+                        "arrayDims": 1
+                      }
+                  }
+                ]
+              }
+          },
+          {
+            "position": {
+              "file": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+              "line": 9,
+              "column": 1
+            },
+            "name": "MyRpc",
+            "annotations": [
+              {
+                "position": {
+                  "file": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+                  "line": 9,
+                  "column": 1
+                },
+                "name": "rpc"
+              }
+            ],
+            "typeRef": {
+              "kind": "object",
+              "objectFields": [
+                {
+                  "position": {
+                    "file": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+                    "line": 11,
+                    "column": 3
+                  },
+                  "name": "barProc",
+                  "optional": false,
+                  "annotations": [
+                    {
+                      "position": {
+                        "file": "/workspaces/vdl-plugin-template/e2e/fixtures/simpletest/schema.vdl",
+                        "line": 11,
+                        "column": 3
+                      },
+                      "name": "proc"
+                    }
+                  ],
+                  "typeRef": {
+                    "kind": "object",
+                    "objectFields": [
+                      {
+                        "position": {
+                          "file": "",
+                          "line": 13,
+                          "column": 5
+                        },
+                        "name": "input",
+                        "optional": false,
+                        "annotations": [],
+                        "typeRef": {
+                            "kind": "object",
+                            "objectFields": [
+                              {
+                                "position": {
+                                  "file": "",
+                                  "line": 14,
+                                  "column": 7
+                                },
+                                "name": "foo",
+                                "optional": false,
+                                "annotations": [],
+                                "typeRef": {
+                                    "kind": "type",
+                                    "typeName": "FooType"
+                                  }
+                              }
+                            ]
+                          }
+                      },
+                      {
+                        "position": {
+                          "file": "",
+                          "line": 17,
+                          "column": 5
+                        },
+                        "name": "output",
+                        "optional": false,
+                        "annotations": [],
+                        "typeRef": {
+                            "kind": "object",
+                            "objectFields": [
+                              {
+                                "position": {
+                                  "file": "",
+                                  "line": 18,
+                                  "column": 7
+                                },
+                                "name": "baz",
+                                "optional": false,
+                                "annotations": [],
+                                "typeRef": {
+                                    "kind": "primitive",
+                                    "primitiveName": "bool"
+                                  }
+                              }
+                            ]
+                          }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+    "docs": []
+  },
+  "options": {
+    "package": "gen"
+  }
+}"
+`;

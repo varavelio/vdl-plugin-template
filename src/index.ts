@@ -11,7 +11,11 @@ export const generate = definePlugin((input) => {
     files: [
       {
         path: "hello.txt",
-        content: "Hello from VDL Plugin SDK",
+        content: "Hello from VDL Plugin",
+      },
+      {
+        path: "input.json",
+        content: JSON.stringify(input, null, 2),
       },
     ],
   };

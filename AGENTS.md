@@ -15,3 +15,9 @@ VDL Plugin SDK manual URL (download and read it): https://vdl-plugin-sdk.varavel
 After completing any task, review this file and update it if you made structural changes or discovered patterns worth documenting. Only add information that helps understand how to work with the project. Avoid implementation details, file listings, or trivial changes. This is a general guide, not a changelog.
 
 When updating this document, do so with the context of the entire document in mind; do not simply add new sections at the end, but place them where they make the most sense within the context of the document.
+
+## Working Notes
+
+- Keep implementations aligned with SDK patterns from the manual.
+- Use the SDK utility functions when possible to avoid duplicating code.
+- `e2e/` this directory contains end to end tests. Recommended structure: one fixture folder per test.

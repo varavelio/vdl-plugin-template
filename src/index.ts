@@ -13,10 +13,6 @@ export const generate = definePlugin((input) => {
         path: "hello.txt",
         content: "Hello from VDL Plugin",
       },
-      {
-        path: "input.json",
-        content: JSON.stringify(input, null, 2),
-      },
     ],
   };
 });

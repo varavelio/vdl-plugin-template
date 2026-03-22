@@ -15,7 +15,7 @@
     "test": "npm run test:unit && npm run test:e2e",
     "test:unit": "vitest run --passWithNoTests --config ./vitest.config.ts ./src",
     "test:e2e": "vitest run --passWithNoTests --config ./vitest.config.ts ./e2e",
-    "ci": "npm run lint && npm run check && npm run test && npm run build"
+    "ci": "npm run build && npm run lint && npm run check && npm run test"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.6",

@@ -25,7 +25,7 @@ __export(index_exports, {
 });
 module.exports = __toCommonJS(index_exports);
 
-// node_modules/@varavel/vdl-plugin-sdk/dist/index.js
+// node_modules/@varavel/vdl-plugin-sdk/dist/core/define-plugin.js
 function definePlugin(handler) {
   return handler;
 }

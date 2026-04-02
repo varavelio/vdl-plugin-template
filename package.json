@@ -22,7 +22,7 @@
     "@types/node": "25.4.0",
     "@varavel/gen": "0.1.0",
     "@varavel/vdl": "0.5.0-alpha.5",
-    "@varavel/vdl-plugin-sdk": "0.4.1",
+    "@varavel/vdl-plugin-sdk": "0.4.2",
     "dprint": "0.52.0",
     "typescript": "5.9.3",
     "vitest": "4.0.18"

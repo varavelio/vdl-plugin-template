@@ -25,11 +25,39 @@ __export(index_exports, {
 });
 module.exports = __toCommonJS(index_exports);
 
+// node_modules/@varavel/vdl-plugin-sdk/dist/core/errors.js
+var _a;
+var PluginError = (_a = class extends Error {
+  constructor(message, position) {
+    super(message);
+    this.name = "PluginError";
+    this.position = position;
+  }
+}, __name(_a, "PluginError"), _a);
+
 // node_modules/@varavel/vdl-plugin-sdk/dist/core/define-plugin.js
 function definePlugin(handler) {
-  return handler;
+  return (input) => {
+    try {
+      return handler(input);
+    } catch (error) {
+      return {
+        files: [],
+        errors: [toPluginError(error)]
+      };
+    }
+  };
 }
 __name(definePlugin, "definePlugin");
+function toPluginError(error) {
+  if (error instanceof PluginError) return {
+    message: error.message,
+    position: error.position
+  };
+  if (error instanceof Error) return { message: error.message };
+  return { message: "An unknown generation error occurred." };
+}
+__name(toPluginError, "toPluginError");
 
 // src/index.ts
 var generate = definePlugin((input) => {

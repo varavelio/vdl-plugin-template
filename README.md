@@ -12,6 +12,15 @@
   Starter template for building a VDL plugin in TypeScript.
 </p>
 
+<p align="center">
+  <a href="https://varavel.com">
+    <img src="https://cdn.jsdelivr.net/gh/varavelio/brand@1.0.0/dist/badges/project.svg" alt="A Varavel project"/>
+  </a>
+  <a href="https://varavel.com/vdl">
+    <img src="https://cdn.jsdelivr.net/gh/varavelio/brand@1.0.0/dist/badges/vdl-plugin.svg" alt="VDL Plugin"/>
+  </a>
+</p>
+
 ## What is included
 
 It includes the VDL plugin SDK, a small code generator, formatting and linting tools, a test setup, an included devcontainer, and a GitHub Actions workflow so you can go from idea to releasable plugin quickly.
@@ -135,4 +144,4 @@ Using MIT for your plugin is not mandatory, but it is strongly appreciated. A pe
 
 ## License
 
-This template is released under the MIT License. See [LICENSE](LICENSE).
+This plugin is released under the MIT License. See [LICENSE](LICENSE).

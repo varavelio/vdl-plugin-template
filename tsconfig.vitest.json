@@ -1,4 +1,0 @@
-{
-  "extends": "@varavel/vdl-plugin-sdk/tsconfig.vitest.base.json",
-  "include": ["src/**/*.test.ts", "tests/**/*.ts", "e2e/**/*.ts", "vitest.config.ts"]
-}

@@ -3,7 +3,7 @@
 #########
 
 # Use node as the base image
-FROM node:26.11.1-trixie as tools
+FROM node:26.12.0-trixie as tools
 
 # Environment variables
 ENV PIP_BREAK_SYSTEM_PACKAGES=1

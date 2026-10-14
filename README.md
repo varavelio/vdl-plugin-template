@@ -31,7 +31,7 @@ It includes the VDL plugin SDK, a small code generator, formatting and linting t
 - TypeScript configuration ready to go based on `@varavel/vdl-plugin-sdk/tsconfig.base.json`.
 - `Biome` and `dprint` for linting and formatting.
 - `Vitest` for tests.
-- A ready-to-use `.devcontainer/` with Node 24, useful CLI tools, and VS Code extensions for VDL, Biome, dprint, and Vitest.
+- A ready-to-use `.devcontainer/` with Node 26, useful CLI tools, and VS Code extensions for VDL, Biome, dprint, and Vitest.
 - A GitHub Actions workflow in `.github/workflows/ci.yaml` that runs `npm run ci` on pushes, pull requests, and manual triggers.
 
 ## Project layout
@@ -94,7 +94,7 @@ g.line("}");
 const content = g.toString();
 ```
 
-If you want real plugin examples, see the official repositories:
+If you want real plugin examples, here is the code for two official plugins:
 
 - [`varavelio/vdl-plugin-go`](https://github.com/varavelio/vdl-plugin-go)
 - [`varavelio/vdl-plugin-ts`](https://github.com/varavelio/vdl-plugin-ts)
